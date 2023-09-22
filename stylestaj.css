@@ -22,15 +22,6 @@ body {
   .head{
     text-shadow: 2px 2px 5px rgb(255, 255, 255);
     font-size: 36px;
-    animation: desplazar 4s linear infinite alternate;
-  }
-  @keyframes desplazar {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(100%);
-    }
   }
   .head:hover{
     background-color: blueviolet;
@@ -38,39 +29,45 @@ body {
     font-style: italic;
     font-size: 50px;
   }
-  .images-row {
+.container{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 10px;
-    width: 100%;
+    padding: 20px;
+
+}
+article{
+    width: 75%;
+    padding: 10px;
+    background-color: palevioletred;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
   }
-  
-  .image-container {
-    width: 100%; 
-    margin: 0 10px; 
-    position: relative;
-  }
-  
-  .image-container img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    margin-top: 10px;
-    transition: filter 0.3s ease-in-out;
-  }
-  
-  .image-container img:hover {
-    filter: brightness(80%);
-    cursor: pointer;
+  aside {
+    width: 25%; 
+    padding: 10px;
+    background-color: rgb(113, 120, 123);
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-style: oblique;
   }
 
-  .image-container a {
-    display: block;
-    text-decoration: none;
+  .list:hover{
+    background-color:blueviolet;
+  }
+   .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
   }
   
-  .image-container a:hover {
-    text-decoration: underline; 
+  .row img {
+    width: 20%; 
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .row img:hover {
+    transform: scale(3); 
   }
   
   .code-overlay {
